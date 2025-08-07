@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手机租赁计算器</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>手机租赁计算器</h1>
+        <form id="rental-form" autocomplete="off">
+            <label for="phone-price">手机金额:</label>
+            <input type="number" id="phone-price" required min="1">
+
+            <label for="down-payment-rate">首付比例 (%):</label>
+            <select id="down-payment-rate" required>
+                <option value="50">50</option>
+                <option value="40">40</option>
+                <option value="30">30</option>
+            </select>
+
+            <label for="rental-months">租赁月份:</label>
+            <select id="rental-months" required>
+                <option value="3">3</option>
+                <option value="6">6</option>
+                <option value="9">9</option>
+                <option value="12">12</option>
+            </select>
+
+            <button type="submit">计算</button>
+        </form>
+
+        <div id="results">
+            <h2>计算结果</h2>
+            <p id="down-payment-amount">首付金额: </p>
+            <p id="monthly-payment">每月还款金额: </p>
+            <p id="months-left">剩余租赁月份: </p>
+        </div>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "phone-rental-calculator",
+  "version": "1.0.0",
+  "description": "A simple application to calculate the down payment and monthly payments for mobile phone rentals.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build step not defined'"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  },
+  "keywords": [
+    "phone",
+    "rental",
+    "calculator"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
