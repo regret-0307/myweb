@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
             else if (leaseMonths === 6) interestRate = 0.28;
             else if (leaseMonths === 9) interestRate = 0.32;
             else if (leaseMonths === 12) interestRate = 0.38;
-        } else if (downPaymentRate === 0.35) {
+        } else if (downPaymentRate === 0.30) {
             if (leaseMonths === 3) interestRate = 0.20;
             else if (leaseMonths === 6) interestRate = 0.32;
             else if (leaseMonths === 9) interestRate = 0.35;
