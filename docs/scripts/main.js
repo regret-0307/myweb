@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // 利率表
     const rateTable = {
-        "50": { "3": 0.18, "6": 0.25, "9": 0.36, "12": 0.50 },
-        "40": { "3": 0.20, "6": 0.30, "9": 0.40, "12": 0.55 },
-        "30": { "3": 0.25, "6": 0.35, "9": 0.45, "12": 0.57 }
+        "50": { "3": 0.18, "6": 0.24, "9": 0.30, "12": 0.35 },
+        "40": { "3": 0.19, "6": 0.28, "9": 0.32, "12": 0.38 },
+        "30": { "3": 0.20, "6": 0.32, "9": 0.35, "12": 0.40 }
     };
 
     function calculate() {
@@ -75,19 +75,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (downPaymentRate === 0.5) {
             if (leaseMonths === 3) interestRate = 0.18;
-            else if (leaseMonths === 6) interestRate = 0.25;
-            else if (leaseMonths === 9) interestRate = 0.36;
-            else if (leaseMonths === 12) interestRate = 0.50;
+            else if (leaseMonths === 6) interestRate = 0.24;
+            else if (leaseMonths === 9) interestRate = 0.30;
+            else if (leaseMonths === 12) interestRate = 0.35;
         } else if (downPaymentRate === 0.4) {
-            if (leaseMonths === 3) interestRate = 0.20;
-            else if (leaseMonths === 6) interestRate = 0.30;
-            else if (leaseMonths === 9) interestRate = 0.40;
-            else if (leaseMonths === 12) interestRate = 0.55;
+            if (leaseMonths === 3) interestRate = 0.19;
+            else if (leaseMonths === 6) interestRate = 0.28;
+            else if (leaseMonths === 9) interestRate = 0.32;
+            else if (leaseMonths === 12) interestRate = 0.38;
         } else if (downPaymentRate === 0.35) {
-            if (leaseMonths === 3) interestRate = 0.25;
-            else if (leaseMonths === 6) interestRate = 0.35;
-            else if (leaseMonths === 9) interestRate = 0.45;
-            else if (leaseMonths === 12) interestRate = 0.57;
+            if (leaseMonths === 3) interestRate = 0.20;
+            else if (leaseMonths === 6) interestRate = 0.32;
+            else if (leaseMonths === 9) interestRate = 0.35;
+            else if (leaseMonths === 12) interestRate = 0.40;
         }
 
         const downPayment = phonePrice * downPaymentRate;
